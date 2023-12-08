@@ -1,4 +1,4 @@
-lass Player {
+class Player {
     constructor(gameScreen, left, top, width, height, imageURL) {
         this.gameScreen = gameScreen;// the game screen element passed as an argument to the constructor.
         this.left = left;// the horizontal position of the car passed as an argument to the constructor.

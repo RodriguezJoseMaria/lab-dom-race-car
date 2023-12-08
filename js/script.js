@@ -1,18 +1,18 @@
 window.onload = function () {
   const startButton = document.getElementById("start-button");
   const restartButton = document.getElementById("restart-button");
+  let newGame;
 
   startButton.addEventListener("click", function () {
     startGame();
   });
 
-  function startGame() {
-    console.log("start game");
   restartButton.addEventListener("click", function () {
     restartGame();
   })
 
   const startGame = () => {
+    console.log("start game");
     newGame = new Game();
     newGame.start();
   }
@@ -33,7 +33,6 @@ window.onload = function () {
     if(keystrokes.includes(key)) {
       event.preventDefault();
 
-
       switch(key) {
         case "ArrowLeft":
           newGame.player.directionX = -1;
@@ -53,9 +52,3 @@ window.onload = function () {
 
   window.addEventListener("keydown", handleKeydown);
 };
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
